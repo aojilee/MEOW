@@ -51,7 +51,7 @@ func (domainList *DomainList) judge(url *URL) (domainType DomainType) {
 	}
 
 	if !config.JudgeByIP {
-		return domainTypeProxy
+		return domainTypeDirect
 	}
 	debug.Printf("judging by ip")
 	var ip string
